@@ -115,7 +115,7 @@ export default function Projects() {
                 {p.tags.map((t) => (
                   <span
                     key={t}
-                    className="rounded-full border border-[rgba(51,92,103,0.16)] bg-[rgba(255,255,255,0.9)] px-3 py-1 text-xs text-slate-700"
+                    className="rounded-full border border-[var(--border)] bg-[var(--panel-strong)] px-3 py-1 text-xs text-[var(--muted)]"
                   >
                     {t}
                   </span>

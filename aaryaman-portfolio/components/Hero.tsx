@@ -86,12 +86,12 @@ export default function Hero() {
               </button>
             </Magnetic>
             <Magnetic>
-              <button
-                onClick={() => scrollTo("#contact", { offset: -72 })}
-                className="glass inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-white/90 transition hover:bg-white/10"
-              >
-                Let’s talk
-              </button>
+            <button
+            onClick={() => scrollTo("#contact", { offset: -72 })}
+            className="glass inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-slate-700 dark:text-white/90 transition hover:bg-white/10"
+          >
+            Let’s talk
+          </button>
             </Magnetic>
           </div>
         </motion.div>

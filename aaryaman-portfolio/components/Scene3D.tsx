@@ -18,7 +18,7 @@ function AbstractObject() {
 
   return (
     <Float speed={1.1} rotationIntensity={0.45} floatIntensity={0.9}>
-      <mesh ref={meshRef}>
+      <mesh ref={meshRef} position={[0.8, -0.1, 0]}>
         <torusKnotGeometry args={[0.8, 0.22, 220, 28]} />
         <meshStandardMaterial
           color={color.base}

@@ -64,7 +64,7 @@ export default function Skills() {
               className="glass rounded-3xl p-6 transition hover:bg-[rgba(255,255,255,0.96)]"
             >
               <div className="flex items-center gap-3">
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[rgba(51,92,103,0.06)] ring-1 ring-[rgba(51,92,103,0.12)]">
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[color-mix(in_srgb,var(--accent-subtle)_18%,transparent)] ring-1 ring-[var(--border)]">
                   <Icon className="h-5 w-5 text-[var(--accent-dark)]" />
                 </span>
                 <div>
@@ -79,7 +79,7 @@ export default function Skills() {
                 {g.skills.map((s) => (
                   <span
                     key={s}
-                    className="rounded-full border border-[rgba(51,92,103,0.16)] bg-[rgba(255,255,255,0.9)] px-3 py-1 text-xs text-slate-700"
+                    className="rounded-full border border-[var(--border)] bg-[var(--panel-strong)] px-3 py-1 text-xs text-[var(--muted)]"
                   >
                     {s}
                   </span>

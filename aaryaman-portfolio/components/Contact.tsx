@@ -62,9 +62,9 @@ export default function Contact() {
           <Magnetic>
             <a
               href={LINKS[0].href}
-              className="glass-strong inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium text-[var(--accent-dark)] transition hover:bg-[rgba(255,255,255,0.96)]"
+              className="glass-strong inline-flex items-center gap-2 rounded-full px-5 py-3 text-sm font-medium text-[var(--accent-dark)] transition hover:bg-[var(--panel-strong)]"
             >
-              <Send className="h-4 w-4 text-[var(--accent-coral)]" />
+              <Send className="h-4 w-4 text-[var(--accent-pop)]" />
               Say hello
             </a>
           </Magnetic>
@@ -80,7 +80,7 @@ export default function Contact() {
                   href={l.href}
                   target={l.href.startsWith("http") ? "_blank" : undefined}
                   rel={l.href.startsWith("http") ? "noreferrer" : undefined}
-                  className="group flex items-center gap-3 rounded-2xl border border-[rgba(51,92,103,0.16)] bg-[rgba(255,255,255,0.9)] p-4 transition hover:bg-[rgba(255,255,255,1)]"
+                  className="group flex items-center gap-3 rounded-2xl border border-[var(--border)] bg-[var(--panel-strong)] p-4 transition hover:bg-[var(--panel-strong)]"
                 >
                   <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[rgba(51,92,103,0.06)] ring-1 ring-[rgba(51,92,103,0.12)]">
                     <Icon className="h-5 w-5 text-[var(--accent-dark)]" />
