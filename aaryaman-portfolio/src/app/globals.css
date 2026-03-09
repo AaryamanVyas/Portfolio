@@ -32,6 +32,12 @@
   --accent-subtle: var(--celadon);
   --accent-warm: var(--cream);
   --accent-pop: var(--hot-fuchsia);
+  
+  /* Additional accent colors for gradients and buttons */
+  --accent-coral: var(--hot-fuchsia);
+  --accent-light-green: #87d68d;
+  --accent-celadon: var(--celadon);
+  --accent-wisteria: var(--tropical-teal);
 }
 
 :root[data-theme="dark"] {
@@ -49,6 +55,12 @@
   --accent-subtle: var(--dark-celadon);
   --accent-warm: rgba(15, 23, 42, 1);
   --accent-pop: var(--dark-coral);
+  
+  /* Additional accent colors for gradients and buttons */
+  --accent-coral: var(--dark-coral);
+  --accent-light-green: var(--dark-light-green);
+  --accent-celadon: var(--dark-celadon);
+  --accent-wisteria: var(--dark-wisteria-blue);
 }
 
 @theme inline {

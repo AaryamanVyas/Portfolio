@@ -103,7 +103,7 @@ export default function Navbar() {
             </a>
           </Magnetic>
 
-          <Magnetic className="hidden sm:block">
+          {/* <Magnetic className="hidden sm:block">
             <button
               onClick={() => scrollTo("#projects", { offset: -90 })}
               className="glass-strong ml-1 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-[var(--accent-dark)] shadow-[0_10px_28px_-18px_rgba(0,0,0,0.25)] transition hover:bg-[var(--panel-strong)]"
@@ -113,7 +113,7 @@ export default function Navbar() {
                 <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-[var(--accent-subtle)] via-[var(--accent-soft)] to-[var(--accent-pop)]" />
               </span>
             </button>
-          </Magnetic>
+          </Magnetic> */}
 
           <Magnetic>
             <button

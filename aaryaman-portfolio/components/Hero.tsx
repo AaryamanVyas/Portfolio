@@ -88,7 +88,7 @@ export default function Hero() {
             <Magnetic>
             <button
             onClick={() => scrollTo("#contact", { offset: -72 })}
-            className="glass inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-medium text-slate-700 dark:text-white/90 transition hover:bg-white/10"
+            className="inline-flex items-center justify-center rounded-full border border-[var(--accent-light-green)]/30 bg-white/80 px-6 py-3 text-sm font-medium text-[#87d68d] transition hover:bg-white hover:border-[var(--accent-light-green)]/50"
           >
             Let’s talk
           </button>
