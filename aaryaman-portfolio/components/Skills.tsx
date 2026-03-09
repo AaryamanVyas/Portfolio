@@ -8,17 +8,17 @@ const GROUPS = [
   {
     title: "Frontend",
     icon: Braces,
-    skills: ["React", "React Native", "Angular", "HTML", "CSS"],
+    skills: ["React.js", "React Native", "Angular", "HTML", "CSS", "JavaScript", "TypeScript"],
   },
   {
     title: "Backend",
     icon: Database,
-    skills: ["Node.js", "MySQL", "REST APIs"],
+    skills: ["Node.js", "Sequelize", "MySQL", "REST APIs"],
   },
   {
     title: "Tools",
     icon: Wrench,
-    skills: ["Git", "Linux", "Figma"],
+    skills: ["Git", "GitHub", "Bitbucket", "Postman", "Linux", "Figma"],
   },
 ] as const;
 
@@ -44,12 +44,12 @@ export default function Skills() {
     >
       <div className="flex items-end justify-between gap-6">
         <div>
-          <p className="text-xs uppercase tracking-[0.22em] text-white/45">Skills</p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <p className="text-xs uppercase tracking-[0.22em] text-slate-500">Skills</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-[var(--accent-dark)] sm:text-4xl">
             A stack built for shipping.
           </h2>
         </div>
-        <p className="hidden max-w-sm text-sm leading-6 text-white/55 sm:block">
+        <p className="hidden max-w-sm text-sm leading-6 text-slate-600 sm:block">
           Strong fundamentals, modern tooling, and a focus on maintainable systems.
         </p>
       </div>
@@ -61,15 +61,17 @@ export default function Skills() {
             <div
               key={g.title}
               data-skill-group
-              className="glass rounded-3xl p-6 transition hover:bg-white/8"
+              className="glass rounded-3xl p-6 transition hover:bg-[rgba(255,255,255,0.96)]"
             >
               <div className="flex items-center gap-3">
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/5 ring-1 ring-white/10">
-                  <Icon className="h-5 w-5 text-white/80" />
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[rgba(51,92,103,0.06)] ring-1 ring-[rgba(51,92,103,0.12)]">
+                  <Icon className="h-5 w-5 text-[var(--accent-dark)]" />
                 </span>
                 <div>
-                  <p className="text-sm font-semibold tracking-tight text-white">{g.title}</p>
-                  <p className="text-xs text-white/45">{g.skills.length} items</p>
+                  <p className="text-sm font-semibold tracking-tight text-[var(--accent-dark)]">
+                    {g.title}
+                  </p>
+                  <p className="text-xs text-slate-500">{g.skills.length} items</p>
                 </div>
               </div>
 
@@ -77,7 +79,7 @@ export default function Skills() {
                 {g.skills.map((s) => (
                   <span
                     key={s}
-                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70"
+                    className="rounded-full border border-[rgba(51,92,103,0.16)] bg-[rgba(255,255,255,0.9)] px-3 py-1 text-xs text-slate-700"
                   >
                     {s}
                   </span>

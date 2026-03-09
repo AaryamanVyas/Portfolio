@@ -44,12 +44,12 @@ export default function About() {
     >
       <div className="flex items-end justify-between gap-6">
         <div>
-          <p className="text-xs uppercase tracking-[0.22em] text-white/45">About</p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
+          <p className="text-xs uppercase tracking-[0.22em] text-slate-500">About</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-[var(--accent-dark)] sm:text-4xl">
             Design-minded engineer. Motion-first.
           </h2>
         </div>
-        <p className="hidden max-w-sm text-sm leading-6 text-white/55 sm:block">
+        <p className="hidden max-w-sm text-sm leading-6 text-slate-600 sm:block">
           I care about the tiny UI details that make a product feel premium—timing, spacing,
           feedback, and performance.
         </p>
@@ -62,18 +62,18 @@ export default function About() {
             <div
               key={card.title}
               data-card
-              className="glass group rounded-3xl p-6 transition hover:bg-white/8"
+              className="glass group rounded-3xl p-6 transition hover:bg-[rgba(255,255,255,0.96)]"
             >
               <div className="flex items-center justify-between">
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-white/5 ring-1 ring-white/10">
-                  <Icon className="h-5 w-5 text-white/80" />
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-[rgba(51,92,103,0.06)] ring-1 ring-[rgba(51,92,103,0.12)]">
+                  <Icon className="h-5 w-5 text-[var(--accent-dark)]" />
                 </span>
                 <span className="h-2 w-2 rounded-full bg-gradient-to-r from-sky-400 via-violet-400 to-emerald-300 opacity-70" />
               </div>
-              <h3 className="mt-5 text-lg font-semibold tracking-tight text-white">
+              <h3 className="mt-5 text-lg font-semibold tracking-tight text-[var(--accent-dark)]">
                 {card.title}
               </h3>
-              <p className="mt-2 text-sm leading-6 text-white/60">{card.body}</p>
+              <p className="mt-2 text-sm leading-6 text-slate-600">{card.body}</p>
             </div>
           );
         })}

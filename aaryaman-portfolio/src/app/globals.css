@@ -1,13 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #05060a;
-  --foreground: #e9ecf3;
-  --muted: rgba(233, 236, 243, 0.7);
-  --panel: rgba(255, 255, 255, 0.06);
-  --panel-strong: rgba(255, 255, 255, 0.1);
-  --border: rgba(255, 255, 255, 0.14);
-  --highlight: rgba(167, 139, 250, 0.22);
+  --background: #ffffff;
+  --foreground: #1f2933;
+  --muted: rgba(31, 41, 51, 0.65);
+
+  --panel: rgba(255, 255, 255, 0.72);
+  --panel-strong: rgba(255, 255, 255, 0.9);
+  --border: rgba(51, 92, 103, 0.12);
+  --highlight: rgba(255, 94, 91, 0.18);
+
+  --accent-dark: #335c67;
+  --accent-celadon: #bcebcb;
+  --accent-light-green: #87d68d;
+  --accent-coral: #ff5e5b;
+  --accent-wisteria: #8fa6cb;
 }
 
 @theme inline {
@@ -19,9 +26,9 @@
 
 body {
   background:
-    radial-gradient(900px 500px at 15% -10%, rgba(56, 189, 248, 0.18), transparent 60%),
-    radial-gradient(800px 520px at 85% 0%, rgba(167, 139, 250, 0.22), transparent 58%),
-    radial-gradient(700px 560px at 50% 110%, rgba(34, 197, 94, 0.12), transparent 62%),
+    radial-gradient(900px 520px at 10% -10%, rgba(143, 166, 203, 0.15), transparent 60%),
+    radial-gradient(820px 540px at 90% 0%, rgba(188, 235, 203, 0.25), transparent 65%),
+    radial-gradient(780px 520px at 50% 115%, rgba(255, 94, 91, 0.14), transparent 70%),
     var(--background);
   color: var(--foreground);
   font-family:
@@ -75,7 +82,13 @@ body {
 }
 
 .animated-gradient-text {
-  background-image: linear-gradient(90deg, #60a5fa, #a78bfa, #22c55e, #60a5fa);
+  background-image: linear-gradient(
+    120deg,
+    var(--accent-celadon),
+    var(--accent-light-green),
+    var(--accent-wisteria),
+    var(--accent-coral)
+  );
   background-size: 200% 200%;
   animation: gradientShift 8s ease infinite;
   -webkit-background-clip: text;
@@ -88,8 +101,8 @@ body {
   inset: -20%;
   background: radial-gradient(
     520px circle at var(--x, 50%) var(--y, 50%),
-    rgba(56, 189, 248, 0.14),
-    rgba(167, 139, 250, 0.12),
+    rgba(188, 235, 203, 0.14),
+    rgba(255, 94, 91, 0.12),
     transparent 55%
   );
   filter: blur(18px);

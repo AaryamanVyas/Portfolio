@@ -8,27 +8,51 @@ import TiltCard from "./ui/TiltCard";
 const PROJECTS = [
   {
     title: "VIT Carpool App",
-    desc: "A student-first carpool experience with smooth onboarding, matching, and ride flows.",
-    tags: ["React Native", "UI/UX", "Performance"],
-    href: "#",
+    desc: "React Native app enabling student ride-sharing with authentication and ride matching flows.",
+    tags: ["React Native", "Authentication", "UX"],
+    href: "https://github.com/AaryamanVyas", // placeholder repo
   },
   {
     title: "Veteran Reintegration System",
-    desc: "A platform concept focused on structured reintegration with dashboards and workflows.",
-    tags: ["React", "Data UI", "APIs"],
-    href: "#",
+    desc: "MongoDB-based system with role-based access control and structured case management.",
+    tags: ["React", "MongoDB", "Role-based access"],
+    href: "https://github.com/AaryamanVyas", // placeholder repo
+  },
+  {
+    title: "Front-End Developer Capstone",
+    desc: "Meta Front-End Developer Capstone project focusing on real-world UI patterns and accessibility.",
+    tags: ["React", "Front-End", "Capstone"],
+    href: "https://github.com/AaryamanVyas/Front-End-Developer-Capstone",
+  },
+  {
+    title: "Advanced React Project",
+    desc: "Final project for an advanced React course with state management and routing.",
+    tags: ["Advanced React", "Routing", "State"],
+    href: "https://github.com/AaryamanVyas/advanced-React/tree/main/final-project",
+  },
+  {
+    title: "React Native Capstone Project",
+    desc: "Meta React Native Capstone mobile app built with React Native, TypeScript, and clean patterns.",
+    tags: ["React Native", "TypeScript", "Capstone"],
+    href: "https://github.com/AaryamanVyas/React-native-capstone",
+  },
+  {
+    title: "React Native Final Assignment",
+    desc: "Assignment project showcasing React Native layouts, navigation, and data flows.",
+    tags: ["React Native", "Assignments"],
+    href: "https://github.com/AaryamanVyas/React-native-final-assignment",
   },
   {
     title: "OSPC Website",
-    desc: "A fast, modern site for a developer community with interactive sections and motion.",
-    tags: ["Next.js", "GSAP", "SEO"],
-    href: "#",
+    desc: "Official site for the Open Source Programming Club (OSPC) at VIT Chennai.",
+    tags: ["Next.js", "Community", "Open Source"],
+    href: "https://github.com/OSPC-VITC/ospc-website",
   },
   {
-    title: "React Native Capstone",
-    desc: "A polished mobile app project built with a product mindset and clean architecture.",
-    tags: ["React Native", "TypeScript", "Design Systems"],
-    href: "#",
+    title: "UX / UI Design Assignment",
+    desc: "UX/UI design-focused assignment translating Figma-style thinking into front-end implementation.",
+    tags: ["UX/UI", "Design", "Front-End"],
+    href: "https://github.com/AaryamanVyas/final-assignment",
   },
 ] as const;
 
@@ -54,14 +78,13 @@ export default function Projects() {
     >
       <div className="flex items-end justify-between gap-6">
         <div>
-          <p className="text-xs uppercase tracking-[0.22em] text-white/45">Projects</p>
-          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Selected work with a premium feel.
+          <p className="text-xs uppercase tracking-[0.22em] text-slate-500">Projects</p>
+          <h2 className="mt-2 text-3xl font-semibold tracking-tight text-[var(--accent-dark)] sm:text-4xl">
+            Projects & GitHub work.
           </h2>
         </div>
-        <p className="hidden max-w-sm text-sm leading-6 text-white/55 sm:block">
-          A mix of apps and web experiences—built with careful motion, performance, and clean UI
-          systems.
+        <p className="hidden max-w-sm text-sm leading-6 text-slate-600 sm:block">
+          A mix of course capstones, community work, and production-style projects.
         </p>
       </div>
 
@@ -69,20 +92,22 @@ export default function Projects() {
         {PROJECTS.map((p) => (
           <TiltCard
             key={p.title}
-            className="group glass rounded-3xl p-6 transition will-change-transform hover:bg-white/8"
+            className="group glass rounded-3xl p-6 transition will-change-transform hover:bg-[rgba(255,255,255,0.96)]"
           >
             <div data-project className="flex h-full flex-col">
               <div className="flex items-start justify-between gap-4">
                 <div>
-                  <h3 className="text-lg font-semibold tracking-tight text-white">{p.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-white/60">{p.desc}</p>
+                  <h3 className="text-lg font-semibold tracking-tight text-[var(--accent-dark)]">
+                    {p.title}
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">{p.desc}</p>
                 </div>
                 <a
                   href={p.href}
-                  className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-white/5 ring-1 ring-white/10 transition group-hover:bg-white/10"
+                  className="inline-flex h-10 w-10 items-center justify-center rounded-2xl bg-[rgba(51,92,103,0.05)] ring-1 ring-[rgba(51,92,103,0.15)] transition group-hover:bg-[rgba(51,92,103,0.08)]"
                   aria-label={`Open ${p.title}`}
                 >
-                  <ArrowUpRight className="h-4 w-4 text-white/80 transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+                  <ArrowUpRight className="h-4 w-4 text-[var(--accent-dark)] transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                 </a>
               </div>
 
@@ -90,18 +115,18 @@ export default function Projects() {
                 {p.tags.map((t) => (
                   <span
                     key={t}
-                    className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/65"
+                    className="rounded-full border border-[rgba(51,92,103,0.16)] bg-[rgba(255,255,255,0.9)] px-3 py-1 text-xs text-slate-700"
                   >
                     {t}
                   </span>
                 ))}
               </div>
 
-              <div className="mt-7 h-px w-full bg-white/10" />
+              <div className="mt-7 h-px w-full bg-[rgba(51,92,103,0.12)]" />
 
               <div className="mt-6 flex items-center justify-between">
-                <p className="text-xs text-white/45">Hover to tilt</p>
-                <div className="h-2 w-16 rounded-full bg-gradient-to-r from-sky-400/40 via-violet-400/40 to-emerald-300/40 blur-[1px]" />
+                <p className="text-xs text-slate-500">Hover to tilt</p>
+                <div className="h-2 w-16 rounded-full bg-gradient-to-r from-[var(--accent-celadon)]/60 via-[var(--accent-wisteria)]/60 to-[var(--accent-coral)]/60 blur-[1px]" />
               </div>
             </div>
           </TiltCard>

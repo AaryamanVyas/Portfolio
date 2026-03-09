@@ -29,9 +29,9 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50">
-      <div className="h-[2px] w-full bg-white/5">
+      <div className="h-[2px] w-full bg-[rgba(255,255,255,0.9)]">
         <div
-          className="h-full bg-gradient-to-r from-sky-400 via-violet-400 to-emerald-300"
+          className="h-full bg-gradient-to-r from-[var(--accent-celadon)] via-[var(--accent-wisteria)] to-[var(--accent-coral)]"
           style={{ width: progressPct }}
         />
       </div>
@@ -40,15 +40,17 @@ export default function Navbar() {
         className={[
           "mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6",
           "transition-all",
-          scrolled ? "glass shadow-[0_12px_40px_-22px_rgba(0,0,0,0.75)]" : "bg-transparent",
+          scrolled
+            ? "glass shadow-[0_12px_40px_-22px_rgba(15,23,42,0.35)]"
+            : "bg-gradient-to-b from-[rgba(255,255,255,0.96)] to-[rgba(255,255,255,0.9)]",
         ].join(" ")}
       >
         <button
-          onClick={() => scrollTo("#top", { offset: -80 })}
-          className="group flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium tracking-tight text-white/90 hover:text-white"
+          onClick={() => scrollTo("#top", { offset: -72 })}
+          className="group flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium tracking-tight text-[var(--accent-celadon)] hover:text-white"
         >
           <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/5 ring-1 ring-white/10 transition group-hover:bg-white/8">
-            <Sparkles className="h-4 w-4 text-violet-200" />
+            <Sparkles className="h-4 w-4 text-[var(--accent-light-green)]" />
           </span>
           <span className="hidden sm:inline">Aaryaman Vyas</span>
         </button>
@@ -68,7 +70,7 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <Magnetic>
             <a
-              href="mailto:aaryamanvyas@example.com"
+              href="mailto:aaryaman.v.vyas@gmail.com"
               className="glass inline-flex h-10 w-10 items-center justify-center rounded-full hover:bg-white/10"
               aria-label="Email"
             >
@@ -77,7 +79,7 @@ export default function Navbar() {
           </Magnetic>
           <Magnetic>
             <a
-              href="https://github.com/"
+              href="https://github.com/AaryamanVyas"
               target="_blank"
               rel="noreferrer"
               className="glass inline-flex h-10 w-10 items-center justify-center rounded-full hover:bg-white/10"
@@ -88,7 +90,7 @@ export default function Navbar() {
           </Magnetic>
           <Magnetic>
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/aaryaman-vyas-44240121a/"
               target="_blank"
               rel="noreferrer"
               className="glass inline-flex h-10 w-10 items-center justify-center rounded-full hover:bg-white/10"
