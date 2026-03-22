@@ -7,7 +7,7 @@ const ITEMS = [
   {
     role: "Software Engineer Intern (Full-Time)",
     org: "TransBnk – Transaction Banking Platform | Mumbai",
-    period: "June 2024 – Aug 2024",
+    period: "June 2025 – Aug 2025",
   },
   {
     role: "Front-End Developer Intern (Part-Time)",
